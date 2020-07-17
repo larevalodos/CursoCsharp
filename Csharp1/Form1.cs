@@ -16,5 +16,52 @@ namespace Csharp1
         {
             InitializeComponent();
         }
+
+        List<string> listNames= new List<string>();    
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listNames.Add(textBox1.Text);
+
+
+            listBox1.DataSource = null;
+            listBox1.DataSource = listNames;
+
+            textBox1.Clear();
+            textBox1.Focus();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show();
+            listNames.Remove(listBox1.SelectedItem.ToString());
+            listBox1.DataSource = null;
+            listBox1.DataSource = listNames;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true;
+                button1.Focus();  
+                //un cambio de menor importancia
+            }
+        }
     }
 }

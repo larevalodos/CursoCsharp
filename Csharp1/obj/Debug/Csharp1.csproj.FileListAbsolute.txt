@@ -7,3 +7,4 @@ D:\GitHub\Dev\Personales\Curso C#\Csharp1\obj\Debug\Csharp1.csproj.GenerateResou
 D:\GitHub\Dev\Personales\Curso C#\Csharp1\obj\Debug\Csharp1.csproj.CoreCompileInputs.cache
 D:\GitHub\Dev\Personales\Curso C#\Csharp1\obj\Debug\Csharp1.exe
 D:\GitHub\Dev\Personales\Curso C#\Csharp1\obj\Debug\Csharp1.pdb
+D:\GitHub\Dev\Personales\Curso C#\Csharp1\obj\Debug\Csharp1.Form1.resources
