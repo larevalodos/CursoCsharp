@@ -43,10 +43,19 @@ namespace Csharp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show();
-            listNames.Remove(listBox1.SelectedItem.ToString());
-            listBox1.DataSource = null;
-            listBox1.DataSource = listNames;
+            try
+            {
+                //MessageBox.Show();
+                listNames.Remove(listBox1.SelectedItem.ToString());
+                listBox1.DataSource = null;
+                listBox1.DataSource = listNames;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Debe estar seleccionado un campo");
+                throw;
+            }
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
