@@ -38,6 +38,9 @@ namespace Csharp1
                 listNames.Remove(listBox1.SelectedItem.ToString());
                 listBox1.DataSource = null;
                 listBox1.DataSource = listNames;
+
+
+                label4.Text = listBox1.Items.Count.ToString();
             }
             catch (Exception)
             {
@@ -65,6 +68,8 @@ namespace Csharp1
 
                 textBox1.Clear();
                 textBox1.Focus();
+
+                label4.Text= listBox1.Items.Count.ToString();
             }
         }
     }
