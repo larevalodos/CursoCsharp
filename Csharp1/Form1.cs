@@ -29,17 +29,6 @@ namespace Csharp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            listNames.Add(textBox1.Text);
-
-
-            listBox1.DataSource = null;
-            listBox1.DataSource = listNames;
-
-            textBox1.Clear();
-            textBox1.Focus();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -49,6 +38,9 @@ namespace Csharp1
                 listNames.Remove(listBox1.SelectedItem.ToString());
                 listBox1.DataSource = null;
                 listBox1.DataSource = listNames;
+
+
+                label4.Text = listBox1.Items.Count.ToString();
             }
             catch (Exception)
             {
@@ -76,6 +68,8 @@ namespace Csharp1
 
                 textBox1.Clear();
                 textBox1.Focus();
+
+                label4.Text= listBox1.Items.Count.ToString();
             }
         }
     }
