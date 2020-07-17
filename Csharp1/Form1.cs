@@ -67,8 +67,15 @@ namespace Csharp1
             if (e.KeyCode == Keys.Enter)
             {
                 e.SuppressKeyPress = true;
-                button1.Focus();  
+                //button1.Focus();   Quitamos este focus
                 //Mejor pongamos otra cosa
+                listNames.Add(textBox1.Text);
+
+                listBox1.DataSource = null;
+                listBox1.DataSource = listNames;
+
+                textBox1.Clear();
+                textBox1.Focus();
             }
         }
     }
