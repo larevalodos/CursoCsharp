@@ -60,7 +60,7 @@ namespace Csharp1
             {
                 e.SuppressKeyPress = true;
                 button1.Focus();  
-                //un cambio de menor importancia
+                //Mejor pongamos otra cosa
             }
         }
     }
