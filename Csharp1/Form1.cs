@@ -53,7 +53,6 @@ namespace Csharp1
             catch (Exception)
             {
                 MessageBox.Show("Debe estar seleccionado un campo");
-                throw;
             }
 
         }
