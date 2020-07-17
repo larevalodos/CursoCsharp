@@ -61,15 +61,19 @@ namespace Csharp1
                 e.SuppressKeyPress = true;
                 //button1.Focus();   Quitamos este focus
                 //Mejor pongamos otra cosa
-                listNames.Add(textBox1.Text);
+                if (!textBox1.Text.Length.Equals(0))
+                {
+                    listNames.Add(textBox1.Text);
 
-                listBox1.DataSource = null;
-                listBox1.DataSource = listNames;
+                    listBox1.DataSource = null;
+                    listBox1.DataSource = listNames;
 
-                textBox1.Clear();
-                textBox1.Focus();
+                    textBox1.Clear();
+                    textBox1.Focus();
 
-                label4.Text= listBox1.Items.Count.ToString();
+                    label4.Text = listBox1.Items.Count.ToString();
+                }
+
             }
         }
     }
