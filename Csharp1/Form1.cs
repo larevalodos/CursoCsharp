@@ -72,6 +72,8 @@ namespace Csharp1
                     textBox1.Focus();
 
                     label4.Text = listBox1.Items.Count.ToString();
+
+                    //BOTN ADICIONAL
                 }
 
             }
